@@ -25,7 +25,9 @@ jobs:
 
       - name: Build
         run: ./build.sh
+        shell: bash
 
       - name: Package
         run: ./package.sh
+        shell: bash
         
