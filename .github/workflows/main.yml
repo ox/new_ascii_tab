@@ -30,4 +30,10 @@ jobs:
       - name: Package
         run: ./package.sh
         shell: bash
+      
+      - name: Upload Extension Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Chrome Extension
+          path: chrome.zip
         
