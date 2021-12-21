@@ -1,7 +1,9 @@
 #!/bin/bash
 
-mkdir -p chrome_ext
-cp index.html chrome_ext
-cp output.css chrome_ext
-cp manifest.json chrome_ext
-zip -r chrome.zip chrome_ext
+outdir="ASCII New Tab Chrome Extension"
+
+mkdir -p "${outdir}"
+cp index.html "${outdir}"
+cp output.css "${outdir}"
+cp manifest.json "${outdir}"
+zip -r chrome.zip "${outdir}"
